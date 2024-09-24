@@ -1,0 +1,12 @@
+*{
+    font-family: "Courier New";
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url("assets/cottoncandy.png");
+    background-size: 33.3vw;
+    background-repeat: repeat;
+    background-color: white;
+}
