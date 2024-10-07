@@ -1,3 +1,10 @@
+/**{*/
+/*    background-image: url("./assets/bgwh.png");*/
+/*    background-size: 100vh;*/
+/*    background-position: center;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
 main{
     display: flex;
     justify-content: space-evenly;
@@ -7,10 +14,13 @@ main{
 }
 
 .text{
-    opacity: 100%;
     color: white;
     font-size: 2em;
     padding-left: 5%;
+    background-image: url("./assets/bgwh.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .menu{
@@ -20,10 +30,18 @@ main{
     flex-direction: column;
     height: 40vh;
     width: 50vw;
+    background-image: url("./assets/bgwh.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .menulinks{
     height: 10vh;
+    background-image: url("./assets/bgwh.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .section{
@@ -32,10 +50,11 @@ main{
     align-content: center;
     text-align: start;
     justify-content: space-evenly;
-    background-color: black;
-    overflow: hidden;
-    margin: 1%;
     height: 40vh;
     width: 50vw;
-    opacity: 70%;
+    margin: 1%;
+    background-image: url("./assets/bgwh.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }

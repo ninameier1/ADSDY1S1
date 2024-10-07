@@ -1,9 +1,6 @@
 <?php include "./views/layout/head.php"?>
 
 <body id="body">
-    <button>
-        Toggle Dark Mode
-    </button>
     <main>
         <link rel="stylesheet" href="./views/css/custom.css">
         <div class="menu">

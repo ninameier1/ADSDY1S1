@@ -3,18 +3,27 @@
 $url = $_SERVER["REQUEST_URI"];
 
 switch ($url) {
-    case"/";
-        require("./views/home.view.php");
+    case "/":
+        require "controllers/homeController.php";
+        $controller = new homeController();
+        $controller->show();
         break;
     case "/projects";
-        require("./views/projects.view.php");
+        require "controllers/projectsController.php";
+        $controller = new projectsController();
+        $controller->show();
         break;
     case "/about";
-        require("./views/about.view.php");
+        require "controllers/aboutController.php";
+        $controller = new aboutController();
+        $controller->show();
         break;
     case "/contact";
-        require("./views/contact.view.php");
+        require "controllers/contactController.php";
+        $controller = new contactController();
+        $controller->show();
         break;
     default:
         echo "hello";
+        break;
 }
