@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <title>ABOUT</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="views/assets/favicon.png">
 </head>
 
 <body>
 <header>
     <nav class="nav1">
         <a href="home.html">
-            <img src="assets/homebl.png" class="navlinks">
+            <img src="views/assets/homebl.png" class="navlinks">
         </a>
         <a href="projects.html">
-            <img src="assets/projectsbl.png" class="navlinks">
+            <img src="views/assets/projectsbl.png" class="navlinks">
         </a>
         <a href="about.html">
-            <img src="assets/ABOUTcc.png" class="navlinks">
+            <img src="views/assets/ABOUTcc.png" class="navlinks">
         </a>
         <a href="contact.html">
-            <img src="assets/contactbl.png" class="navlinks">
+            <img src="views/assets/contactbl.png" class="navlinks">
         </a>
     </nav>
 </header>

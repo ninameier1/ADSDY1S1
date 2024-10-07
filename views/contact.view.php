@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <title>CONTACT</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <link rel="icon" type="image/x-icon" href="views/assets/favicon.png">
 </head>
 <body>
 <header>
     <nav class="nav1">
         <a href="home.html">
-            <img src="assets/homebl.png" class="navlinks">
+            <img src="views/assets/homebl.png" class="navlinks">
         </a>
         <a href="projects.html">
-            <img src="assets/projectsbl.png" class="navlinks">
+            <img src="views/assets/projectsbl.png" class="navlinks">
         </a>
-        <a href="about.html">
-            <img src="assets/ABOUTbl.png" class="navlinks">
+        <a href="views/about.view.php">
+            <img src="views/assets/ABOUTbl.png" class="navlinks">
         </a>
         <a href="contact.html">
-            <img src="assets/contactcc.png" class="navlinks">
+            <img src="views/assets/contactcc.png" class="navlinks">
         </a>
     </nav>
 </header>
