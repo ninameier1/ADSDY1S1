@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ABOUT</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="icon" type="image/x-icon" href="views/assets/favicon.png">
-</head>
-
-<body>
-<header>
-    <nav class="nav1">
-        <a href="home.html">
-            <img src="views/assets/homebl.png" class="navlinks">
-        </a>
-        <a href="projects.html">
-            <img src="views/assets/projectsbl.png" class="navlinks">
-        </a>
-        <a href="about.html">
-            <img src="views/assets/ABOUTcc.png" class="navlinks">
-        </a>
-        <a href="contact.html">
-            <img src="views/assets/contactbl.png" class="navlinks">
-        </a>
-    </nav>
-</header>
+<?php include "./views/layout/head.php"?>
+<?php include "./views/layout/header.php"?>
 
 <main class="mainabout">
     <div class="section" id="tiny">
@@ -113,6 +89,5 @@
         </div>
     </div>
 </main>
-<script src="js.js"></script>
-</body>
-</html>
+
+<?php include "./views/layout/foot.php"?>

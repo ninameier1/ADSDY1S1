@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("../assets/cottoncandy.png");
+    background-image: url("assets/cottoncandy.png");
     background-size: 33.3vw;
     background-repeat: repeat;
     background-color: white;
@@ -15,8 +15,8 @@ header{
     position: sticky; top: 0px;
     height: 16vh;
     width: 100vw;
-    display: flex;
-    align-items: flex-end;
+    align-content: end;
+    /*border: 2px solid green;*/
 }
 
 .nav1{
@@ -45,7 +45,7 @@ header{
     width: 100vw;
     height: calc(100vh - 16vh);
     gap: 1%;
-    border: 2px solid green;
+    /*border: 2px solid green;*/
 }
 
 .section{
@@ -56,7 +56,6 @@ header{
     background-color: black;
     margin: 1%;
     opacity: 70%;
-
 }
 
 .text{
@@ -75,9 +74,6 @@ header{
     height: calc(100vh - 16vh);
     overflow: scroll;
 }
-
-
-
 
 .maincontact{
     display: flex;
