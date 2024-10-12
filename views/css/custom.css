@@ -25,7 +25,7 @@ main{
 
 .menu{
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     flex-direction: column;
     height: 40vh;
@@ -37,11 +37,11 @@ main{
 }
 
 .menulinks{
-    height: 10vh;
-    background-image: url("./assets/bgwh.png");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    width: 40vw;
+    /*background-image: url("./assets/bgwh.png");*/
+    /*background-size: 100%;*/
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
 }
 
 .section{
@@ -52,7 +52,7 @@ main{
     justify-content: space-evenly;
     height: 40vh;
     width: 50vw;
-    margin: 1%;
+    margin: 5%;
     background-image: url("./assets/bgwh.png");
     background-size: 100%;
     background-position: center;
