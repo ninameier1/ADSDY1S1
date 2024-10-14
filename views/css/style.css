@@ -13,9 +13,10 @@
     height: 100vh;
 }
 
+/*HEADER*/
 header{
     position: sticky; top: 0px;
-    height: 16vh;
+    height: 15vh;
     width: 100vw;
     align-content: end;
 }
@@ -27,7 +28,8 @@ header{
     align-items: center;
     height: 10vh;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
 .navlinks{
@@ -38,77 +40,113 @@ header{
     transform: scale(1.1);
 }
 
+/*ABOUTPAGINA*/
 .mainabout{
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: flex-start;
-    width: 100vw;
-    height: calc(100vh - 16vh);
-    gap: 1%;
+    height: calc(100vh - 15vh);
 }
 
-.section{
+.aboutsection{
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.left{
     display: flex;
+    flex: 1;
     flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 1%;
+    justify-content: space-between;
+    margin: 2% 2% 2% 2%;
+    height: calc(100vh - 20vh);
+}
+.me{
+    height: 38.5vh;
+}
+
+.index{
+    height: 38.5vh;
+}
+
+.right{
+    display: flex;
+    flex: 1;
+    margin: 2% 2% 2% 0;
+    height: calc(100vh - 20vh);
+}
+
+.cv{
+    height: 80vh;
+    overflow: scroll;
 }
 
 .text{
     color: white;
-    font-size: 2em;
-    padding-left: 5%;
+    font-size: 1rem;
+    padding: 5%;
 }
 
-#tiny{
-    flex: 1;
-    height: calc(100vh - 16vh);
-}
-
-#big{
-    flex: 4;
-    height: calc(100vh - 16vh);
-    overflow: scroll;
-}
-
+/*CONTACTPAGINA*/
 .maincontact{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     width: 100vw;
-    height: calc(100vh - 16vh);
+    height: calc(100vh - 15vh);
 }
 
 .contactsection{
-    flex: 1;
     margin: 10px;
-    height: 50vh;
-    background-color: rgba(0, 0, 0, 0.7)
+    height: 40vh;
+    width: 45vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.contactlinks{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+.contacttitle{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
 }
 
 .form{
-    display: flex;
-    flex-direction: column;
-    margin: 1%;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*margin: 1%;*/
 }
 
 .name,.email,.message,.button{
-    border-radius: 2px;
-    margin: 5px;
+    /*border-radius: 2px;*/
+    /*margin: 5px;*/
 }
 
 .message{
-    height: 33vh;
+    /*height: 33vh;*/
 }
 
 .button{
     width: 20%;
     height: 3vh;
 }
+
+.socials{
+    height: 100px;
+    width: auto;
+    filter: invert(1);
+}
+
+/*OVERIG*/
 
 .darkmode{
     filter: brightness(0.6);

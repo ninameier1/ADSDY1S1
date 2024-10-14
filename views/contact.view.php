@@ -4,6 +4,9 @@
 
 <main class="maincontact">
     <div class="contactsection">
+        <h2 class="contacttitle">
+            Contact Me
+        </h2>
         <form class="form" method="post">
             <input type="text" placeholder="Name" class="name" name="name">
             <input type="text" placeholder="E-mail" class="email" name="email">
@@ -11,9 +14,13 @@
             <button type="submit" class="button">SEND</button>
         </form>
     </div>
-    <div class="contactsection">
-        <a href="https://github.com/" class="text">Github</a>
-        <a href="https://linkedin.com" class="text">LinkedIn</a>
+    <div class="contactlinks">
+        <a href="https://github.com/">
+            <img src="./views/css/assets/github.png" class="socials">
+        </a>
+        <a href="https://linkedin.com">
+            <img src="./views/css/assets/linkedin.png" class="socials">
+        </a>
     </div>
 </main>
 
