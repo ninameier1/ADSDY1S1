@@ -1,6 +1,6 @@
 <body id="body">
 <header id="header">
-    <button>
+    <button id="darkbutton" onclick="darkmode()">
         Toggle Dark Mode
     </button>
     <nav class="nav1" id="nav">

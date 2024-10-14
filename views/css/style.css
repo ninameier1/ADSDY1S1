@@ -4,14 +4,13 @@
     margin: 0px;
 }
 
-html{
+.background{
     background-image: url("assets/bgwh.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    filter: brightness(0.7);
 }
 
 header{
@@ -33,7 +32,6 @@ header{
 
 .navlinks{
     height: 6.5vh;
-    /*filter: brightness(0.7);*/
 }
 
 .menulinks:hover, .navlinks:hover {
@@ -112,4 +110,7 @@ header{
     height: 3vh;
 }
 
+.darkmode{
+    filter: brightness(0.6);
+}
 

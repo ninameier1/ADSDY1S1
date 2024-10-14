@@ -3,20 +3,23 @@
 <link rel="stylesheet" href="./views/css/custom.css">
 
 <body id="body">
+    <button id="darkbutton" onclick="darkmode()">
+        Toggle Dark Mode
+    </button>
     <main>
         <div class="menu">
-        <img src="./views/css/assets/black.png" class="title">
+        <img src="./views/css/assets/titlewh.png" class="title">
         <p class="hometext">
             STUDENT SOFTWARE DEVELOPMENT WINDESHEIM FLEVOLAND
         </p>
             <a href="/projects">
-                <img src="./views/css/assets/projectsbl.png" class="menulinks" id="projectswh">
+                <img src="./views/css/assets/projectswh.png" class="menulinks" id="projectswh">
             </a>
             <a href="/about">
-                <img src="./views/css/assets/ABOUTbl.png" class="menulinks" id="aboutwh">
+                <img src="./views/css/assets/ABOUTwh.png" class="menulinks" id="aboutwh">
             </a>
             <a href="/contact">
-                <img src="./views/css/assets/contactbl.png" class="menulinks" id="contactwh">
+                <img src="./views/css/assets/contactwh.png" class="menulinks" id="contactwh">
             </a>
         </div>
     </main>
