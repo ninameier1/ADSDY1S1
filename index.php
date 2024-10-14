@@ -20,8 +20,17 @@ switch ($url) {
         break;
     case "/contact";
         require "controllers/contactController.php";
+        $controller = new contactcontroller();
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $controller->store();
+        } else {
+            $controller->show();
+        }
+        break;
+    case "/messages":
+        require "controllers/contactController.php";
         $controller = new contactController();
-        $controller->show();
+        $controller->showMessages();
         break;
     default:
         echo "hello";

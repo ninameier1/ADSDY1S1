@@ -4,10 +4,10 @@
 
 <main class="maincontact">
     <div class="contactsection">
-        <form class="form">
-            <input type="text" placeholder="Name" class="name">
-            <input type="text" placeholder="E-mail" class="email">
-            <input type="text" placeholder="Message..." class="message">
+        <form class="form" method="post">
+            <input type="text" placeholder="Name" class="name" name="name">
+            <input type="text" placeholder="E-mail" class="email" name="email">
+            <input type="text" placeholder="Message..." class="message" name="message">
             <button type="submit" class="button">SEND</button>
         </form>
     </div>
