@@ -9,7 +9,9 @@ html{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.7);
 }
 
 header{
@@ -17,7 +19,6 @@ header{
     height: 16vh;
     width: 100vw;
     align-content: end;
-    /*border: 2px solid green;*/
 }
 
 .nav1{
@@ -27,12 +28,12 @@ header{
     align-items: center;
     height: 10vh;
     width: 100vw;
-    /*background-color: white;*/
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 .navlinks{
     height: 6.5vh;
+    /*filter: brightness(0.7);*/
 }
 
 .menulinks:hover, .navlinks:hover {
@@ -47,7 +48,6 @@ header{
     width: 100vw;
     height: calc(100vh - 16vh);
     gap: 1%;
-    /*border: 2px solid green;*/
 }
 
 .section{

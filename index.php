@@ -1,5 +1,8 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 $url = $_SERVER["REQUEST_URI"];
 
 switch ($url) {
@@ -28,11 +31,20 @@ switch ($url) {
         }
         break;
     case "/messages":
-        require "controllers/contactController.php";
-        $controller = new contactController();
+        require "controllers/messageController.php";
+        $controller = new messageController();
         $controller->showMessages();
         break;
+    case "/messages/delete":
+        require "controllers/messageController.php";
+        $controller = new messageController();
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['messageid'])) {
+            $controller->deleteMessage($_POST['messageid']);
+        } else {
+            echo "Invalid request";
+        }
+        break;
     default:
-        echo "hello";
+        echo "404";
         break;
 }

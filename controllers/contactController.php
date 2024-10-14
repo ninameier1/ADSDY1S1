@@ -18,15 +18,8 @@ class contactController{
             $message = $_POST['message'];
 
             $this->contactModel->createMessage($name, $email, $message);
-
-            echo "Message sent successfully";
+            header("Location: /contact");
         }
-    }
-    public function showMessages()
-    {
-        $title = "Messages";
-        $messages = $this->contactModel->getAllMessages();
-        require "./views/messages.view.php";
     }
 }
 ?>

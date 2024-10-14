@@ -6,9 +6,14 @@
     <ul>
         <?php foreach ($messages as $message):?>
             <li>
-                <strong>Name:</strong><?=htmlspecialchars($message['name'])?><br>
-                <strong>Email:</strong><?=htmlspecialchars($message['email'])?><br>
-                <strong>Message:</strong><?=nl2br(htmlspecialchars($message['message']))?>
+                <p>Name: <?= htmlspecialchars($message['name'])?></p>
+                <p>Email: <?= htmlspecialchars($message['email'])?></p>
+                <p>Message: <?= htmlspecialchars($message['message'])?></p>
+                <p>Sent at: <?= htmlspecialchars($message['sent_at'])?></p>
+                <form action="/messages/delete" method="POST" style="display:inline;">
+                    <input type="hidden" name="messageid" value="<?= htmlspecialchars($message['messageid']) ?>">
+                    <button type="submit">Delete</button>
+                </form>
             </li>
             <hr>
         <?php endforeach;?>

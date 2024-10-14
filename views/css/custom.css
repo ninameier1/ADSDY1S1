@@ -8,6 +8,7 @@ main{
 
 .title{
     height:30vh;
+    /*filter: brightness(0.5);*/
 }
 
 .hometext{
@@ -28,4 +29,5 @@ main{
 
 .menulinks{
     width: 45vw;
+    /*filter: brightness(0.5);*/
 }
