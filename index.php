@@ -1,8 +1,5 @@
 <?php
 
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
 $url = $_SERVER["REQUEST_URI"];
 
 switch ($url) {
@@ -30,16 +27,34 @@ switch ($url) {
             $controller->show();
         }
         break;
-    case "/messages":
-        require "controllers/messageController.php";
-        $controller = new messageController();
+    case "/adminmessages":
+        require "controllers/contactController.php";
+        $controller = new contactController();
         $controller->showMessages();
         break;
-    case "/messages/delete":
-        require "controllers/messageController.php";
-        $controller = new messageController();
+    case "/adminmessages/delete":
+        require "controllers/contactController.php";
+        $controller = new contactController();
         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['messageid'])) {
-            $controller->deleteMessage($_POST['messageid']);
+            $controller->deleteMessages($_POST['messageid']);
+        } else {
+            echo "Invalid request";
+        }
+        break;
+    case "/adminprojects":
+        require "controllers/projectsController.php";
+        $controller = new projectsController();
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $controller->store();
+        } else {
+            $controller->showProjects();
+        }
+        break;
+    case "/adminprojects/delete":
+        require "controllers/projectsController.php";
+        $controller = new projectsController();
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['projectid'])) {
+            $controller->deleteProjects($_POST['projectid']);
         } else {
             echo "Invalid request";
         }

@@ -4,14 +4,10 @@ function darkmode(){
     toggleBackground()
 }
 
-function darkmenu(){
+function darkmenu() {
     const elementsToFilter = document.querySelectorAll(".menulinks, .navlinks, .title");
-    elementsToFilter.forEach(element=>{
-        if (element.classList.contains("darkmode")){
-            element.classList.remove("darkmode");
-        } else {
-            element.classList.add("darkmode");
-        }
+    elementsToFilter.forEach(element => {
+        element.classList.toggle("darkmode");
     });
 }
 

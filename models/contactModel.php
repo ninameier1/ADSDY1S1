@@ -1,17 +1,15 @@
 <?php
-
 class contactModel{
     private $conn;
-
     public function __construct($servername, $dbname, $username, $password){
         $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     }
-    public function createMessage($name, $email, $message){
-        $sql = "INSERT INTO messages (name, email, message) VALUES (:name, :email, :message)";
+    public function createMessage($name, $email, $content){
+        $sql = "INSERT INTO messages (name, email, content) VALUES (:name, :email, :content)";
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(':name', $name);
         $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':message', $message);
+        $stmt->bindParam(':content', $content);
         $stmt->execute();
     }
     public function getAllMessages(){

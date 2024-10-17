@@ -8,7 +8,7 @@
     </button>
     <main>
         <div class="menu">
-        <img src="./views/css/assets/titlewh.png" class="title">
+        <img src="./views/css/assets/flip.png" class="title">
         <p class="hometext">
             STUDENT SOFTWARE DEVELOPMENT WINDESHEIM FLEVOLAND
         </p>

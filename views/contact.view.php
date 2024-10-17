@@ -10,7 +10,7 @@
         <form class="form" method="post">
             <input type="text" placeholder="Name" class="name" name="name">
             <input type="text" placeholder="E-mail" class="email" name="email">
-            <input type="text" placeholder="Message..." class="message" name="message">
+            <input type="text" placeholder="Message..." class="content" name="content">
             <button type="submit" class="button">SEND</button>
         </form>
     </div>
