@@ -1,8 +1,6 @@
 <?php include "./views/layout/head.php"?>
+<?php include "./views/layout/adminheader.php"?>
 
-<?php include "./views/layout/header.php"?>
-
-<body>
 <h1>All Messages</h1>
 <?php if (!empty($messages)):?>
     <ul>
@@ -23,7 +21,6 @@
 <?php else:?>
     <p>No messages found.</p>
 <?php endif;?>
-</body>
 
 <?php include "./views/layout/foot.php"?>
 

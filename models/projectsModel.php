@@ -17,6 +17,14 @@ class projectsModel{
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+    public function updateProject($projectid, $title, $description){
+        $sql = "UPDATE projects SET title = :title, description = :description WHERE projectid = :projectid";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindParam(':title', $title);
+        $stmt->bindParam(':description', $description);
+        $stmt->bindParam(':projectid', $projectid, PDO::PARAM_INT);
+        $stmt->execute();
+    }
     public function deleteProject($projectid){
         $sql = "DELETE FROM projects WHERE projectid = :projectid";
         $stmt = $this->conn->prepare($sql);

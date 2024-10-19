@@ -4,7 +4,7 @@ function darkmode(){
     toggleBackground()
 }
 
-function darkmenu() {
+function darkmenu(){
     const elementsToFilter = document.querySelectorAll(".menulinks, .navlinks, .title");
     elementsToFilter.forEach(element => {
         element.classList.toggle("darkmode");
@@ -20,4 +20,13 @@ function toggleBackground(){
         backgroundElement.style.backgroundImage = 'url("./views/css/assets/bgbl.png")';
     }
     isDarkMode = !isDarkMode;
+}
+
+function toggleEditForm(projectId){
+    const editForm = document.getElementById("edit-form-" + projectId);
+    if (editForm.style.display === "none" || editForm.style.display === ""){
+        editForm.style.display = "block";
+    } else {
+        editForm.style.display = "none";
+    }
 }

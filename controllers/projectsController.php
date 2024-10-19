@@ -24,6 +24,19 @@ class projectsController{
             header("Location: /adminprojects");
         }
     }
+    public function update(){
+        if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['projectid'])) {
+            $projectid = $_POST['projectid'];
+            $title = $_POST['title'];
+            $description = $_POST['description'];
+
+            $this->projectsModel->updateProject($projectid, $title, $description);
+            header("Location: /adminprojects");
+            exit();
+        } else {
+            echo "Invalid request";
+        }
+    }
     public function deleteProjects($projectid){
         $this->projectsModel->deleteProject($projectid);
         header("Location: /adminprojects");

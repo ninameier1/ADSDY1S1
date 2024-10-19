@@ -1,8 +1,7 @@
 <?php include "./views/layout/head.php"?>
+<?php include "./views/layout/adminheader.php"?>
 
-<?php include "./views/layout/header.php"?>
-<body>
-
+<h1>CREATE NEW PROJECT</h1>
 <form class="form" method="post">
     <input type="text" placeholder="Project Title" class="title" name="title">
     <input type="text" placeholder="Project Description" class="description" name="description">
@@ -14,8 +13,15 @@
     <ul>
         <?php foreach ($projects as $project):?>
             <li>
-                <p>Name: <?=htmlspecialchars($project['title'] ?? '')?></p>
-                <p>Email: <?=htmlspecialchars($project['description'] ?? '')?></p>
+                <p>Title: <?=htmlspecialchars($project['title'] ?? '')?></p>
+                <p>Description: <?=htmlspecialchars($project['description'] ?? '')?></p>
+                <button class="edit-button" onclick="toggleEditForm(<?=htmlspecialchars($project['projectid'])?>)">Edit</button>
+                <form action="/adminprojects/update" method="POST" style="display:none;" id="edit-form-<?=htmlspecialchars($project['projectid'])?>">
+                    <input type="hidden" name="projectid" value="<?=htmlspecialchars($project['projectid'])?>">
+                    <input type="text" name="title" value="<?=htmlspecialchars($project['title'])?>">
+                    <input type="text" name="description" value="<?=htmlspecialchars($project['description'])?>">
+                    <button type="submit">Update</button>
+                </form>
                 <form action="/adminprojects/delete" method="POST" style="display:inline;">
                     <input type="hidden" name="projectid" value="<?=htmlspecialchars($project['projectid'])?>">
                     <button type="submit">Delete</button>
@@ -27,7 +33,5 @@
 <?php else:?>
     <p>No projects found.</p>
 <?php endif;?>
-</body>
-
 
 <?php include "./views/layout/foot.php"?>
