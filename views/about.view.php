@@ -4,12 +4,23 @@
 <main class="mainabout">
     <div class="left">
         <div class="me aboutsection">
-            <p class="text">
-                    about
-                    Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis
-                    suscipit laboriosam, nisi ut aliquid ex ea commodi
-            </p>
+            <a href="/about/nl">
+                <button>
+                    Nederlands
+                </button>
+            </a>
+            <a href="/about">
+                <button>
+                    English
+                </button>
+            </a>
+            <?php if (!empty($about)):?>
+                <?php foreach ($about as $ab):?>
+                    <p><?=htmlspecialchars($ab['bio'] ?? '')?></p>
+                <?php endforeach;?>
+            <?php else:?>
+                <p>404</p>
+            <?php endif;?>
         </div>
         <div class="index aboutsection">
             <p class="text">

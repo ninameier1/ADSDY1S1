@@ -1,5 +1,6 @@
 <?php
 require "./models/contactModel.php";
+require "./controllers/adminController.php";
 class contactController{
     protected $contactModel;
     public function __construct(){

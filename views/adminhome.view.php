@@ -1,15 +1,19 @@
 <?php include "./views/layout/head.php"?>
 <?php include "./views/layout/adminheader.php"?>
 
-<a href="/adminhome">
+<a href="/admin/home">
     ADMIN HOMEPAGE
 </a>
-<a href="/adminprojects">
+    <br>
+<a href="/admin/projects">
     EDIT PROJECTS
-<a href="/adminabout">
+</a>
+    <br>
+<a href="/admin/about">
     EDIT ABOUT
 </a>
-<a href="/adminmessages">
+    <br>
+<a href="/admin/messages">
     READ MESSAGES
 </a>
 

@@ -1,27 +1,25 @@
 <?php
 require "./models/aboutModel.php";
-class aboutController{
+require "./controllers/adminController.php";
+class aboutController {
+
     protected $aboutModel;
     public function __construct(){
         $this->aboutModel = new aboutModel('localhost', 'portfolio', 'root', 'NEWPASS');
     }
-    public function show(){
+    public function showAboutEN(){
         $title = "About";
+        $about = $this->aboutModel->getAboutEN();
+        require "./views/about.view.php";
+    }
+    public function showAboutNL(){
+        $title = "About";
+        $about = $this->aboutModel->getAboutNL();
         require "./views/about.view.php";
     }
     public function showAbout(){
         $title = "Admin About";
         $about = $this->aboutModel->getAbout();
-        require "./views/adminabout.view.php";
-    }
-    public function showAboutEN(){
-        $title = "Admin About";
-        $about = $this->aboutModel->getAboutEN();
-        require "./views/adminabout.view.php";
-    }
-    public function showAboutNL(){
-        $title = "Admin About";
-        $about = $this->aboutModel->getAboutNL();
         require "./views/adminabout.view.php";
     }
     public function update(){
@@ -31,7 +29,7 @@ class aboutController{
             $bio = $_POST['bio'];
 
             $this->aboutModel->updateAbout($aboutid, $language, $bio);
-            header("Location: /adminabout");
+            header("Location: /admin/about");
             exit();
         } else {
             echo "Invalid request";

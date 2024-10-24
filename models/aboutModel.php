@@ -11,13 +11,13 @@ class aboutModel{
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     public function getAboutEN(){
-        $sql = "SELECT bio FROM about WHERE language = 'english'";
+        $sql = "SELECT * FROM about WHERE language = 'english'";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     public function getAboutNL(){
-        $sql = "SELECT bio FROM about WHERE language = 'dutch'";
+        $sql = "SELECT * FROM about WHERE language = 'dutch'";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);

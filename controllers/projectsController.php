@@ -1,5 +1,6 @@
 <?php
 require "./models/projectsModel.php";
+require "./controllers/adminController.php";
 class projectsController{
     protected $projectsModel;
     public function __construct(){
@@ -11,7 +12,7 @@ class projectsController{
         require "./views/projects.view.php";
     }
     public function showProjects(){
-        $title = "AdminProjects";
+        $title = "Admin Projects";
         $projects = $this->projectsModel->getAllProjects();
         require "./views/adminprojects.view.php";
     }
@@ -21,7 +22,7 @@ class projectsController{
             $description = $_POST['description'];
 
             $this->projectsModel->createProject($title, $description);
-            header("Location: /adminprojects");
+            header("Location: /admin/projects");
         }
     }
     public function update(){
@@ -31,7 +32,7 @@ class projectsController{
             $description = $_POST['description'];
 
             $this->projectsModel->updateProject($projectid, $title, $description);
-            header("Location: /adminprojects");
+            header("Location: /admin/projects");
             exit();
         } else {
             echo "Invalid request";
@@ -39,7 +40,7 @@ class projectsController{
     }
     public function deleteProjects($projectid){
         $this->projectsModel->deleteProject($projectid);
-        header("Location: /adminprojects");
+        header("Location: /admin/projects");
         exit();
     }
 }
