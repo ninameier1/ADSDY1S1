@@ -41,7 +41,37 @@ header{
     transform: scale(1.1);
 }
 
-/*ABOUTPAGINA*/
+/*PROJECTSPAGE*/
+.createproject{
+    height:15vh;
+
+}
+.projectgrid{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    height: calc(100vh - 15vh);
+    overflow-y: scroll;
+}
+
+.plistitem{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-item {
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: left;
+    height: 25vh;
+}
+
+/*ABOUTPAGE*/
 .mainabout{
     display: flex;
     justify-content: space-evenly;
@@ -90,7 +120,7 @@ header{
     padding: 5%;
 }
 
-/*CONTACTPAGINA*/
+/*CONTACTPAGE*/
 .maincontact{
     display: flex;
     flex-direction: column;
@@ -155,7 +185,7 @@ header{
     filter: invert(1);
 }
 
-/*OVERIG*/
+/*DARKMODE*/
 
 .darkmode{
     filter: brightness(0.6);

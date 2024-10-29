@@ -2,16 +2,14 @@
 <?php include "./views/layout/header.php"?>
 
 
-<main>
-    <h1>All Projects</h1>
+<main class="projectgrid">
     <?php if (!empty($projects)):?>
-        <ul>
+        <ul class="plistitem">
             <?php foreach ($projects as $project):?>
-                <li>
-                    <p>Name: <?=htmlspecialchars($project['title'] ?? '')?></p>
-                    <p>Email: <?=htmlspecialchars($project['description'] ?? '')?></p>
+                <li class="project-item">
+                    <p>Title: <?=htmlspecialchars($project['title'] ?? '')?></p>
+                    <p>Description: <?=htmlspecialchars($project['description'] ?? '')?></p>
                 </li>
-                <hr>
             <?php endforeach;?>
         </ul>
     <?php else:?>

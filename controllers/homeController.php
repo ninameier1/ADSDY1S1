@@ -1,7 +1,6 @@
 <?php
 class homeController{
-    public function show()
-    {
+    public function show(){
         $title = "Home";
         require "./views/home.view.php";
     }

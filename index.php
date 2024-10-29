@@ -2,7 +2,7 @@
 
 $url = $_SERVER["REQUEST_URI"];
 
-switch ($url) {
+switch ($url){
     case "/":
         require "controllers/homeController.php";
         $controller = new homeController();

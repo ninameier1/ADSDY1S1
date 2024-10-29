@@ -1,33 +1,41 @@
 <?php include "./views/layout/head.php"?>
 <?php include "./views/layout/adminheader.php"?>
 
-<h1>CREATE NEW PROJECT</h1>
-<form class="form" method="post">
-    <input type="text" placeholder="Project Title" class="title" name="title">
-    <input type="text" placeholder="Project Description" class="description" name="description">
-    <button type="submit" class="button">SEND</button>
-</form>
-
-<h1>All Projects</h1>
-<?php if (!empty($projects)):?>
-        <?php foreach ($projects as $project):?>
-                <p>Title: <?=htmlspecialchars($project['title'] ?? '')?></p>
-                <p>Description: <?=htmlspecialchars($project['description'] ?? '')?></p>
-                <button class="edit-button" onclick="toggleEditForm(<?=htmlspecialchars($project['projectid'])?>)">Edit</button>
-                <form action="/admin/projects/update" method="POST" style="display:none;" id="edit-form-<?=htmlspecialchars($project['projectid'])?>">
-                    <input type="hidden" name="projectid" value="<?=htmlspecialchars($project['projectid'])?>">
-                    <input type="text" name="title" value="<?=htmlspecialchars($project['title'])?>">
-                    <input type="text" name="description" value="<?=htmlspecialchars($project['description'])?>">
-                    <button type="submit">Update</button>
-                </form>
-                <form action="/admin/projects/delete" method="POST" style="display:inline;">
-                    <input type="hidden" name="projectid" value="<?=htmlspecialchars($project['projectid'])?>">
-                    <button type="submit">Delete</button>
-                </form>
-            <hr>
-        <?php endforeach;?>
-<?php else:?>
-    <p>No projects found.</p>
-<?php endif;?>
+<main class="projectgrid">
+    <div class="createproject">
+        <h1 class="ptitle">CREATE NEW PROJECT</h1>
+        <form class="form" method="post">
+            <input type="text" placeholder="Project Title" class="title" name="title">
+            <input type="text" placeholder="Project Description" class="description" name="description">
+            <button type="submit" class="button">SEND</button>
+        </form>
+    </div>
+    <div>
+        <h1>All Projects</h1>
+            <?php if (!empty($projects)):?>
+    <ul class="plistitem">
+                    <?php foreach ($projects as $project):?>
+                    <li class="project-item">
+                            <p>Title: <?=htmlspecialchars($project['title'] ?? '')?></p>
+                            <p>Description: <?=htmlspecialchars($project['description'] ?? '')?></p>
+                            <button class="edit-button" onclick="toggleEditForm(<?=htmlspecialchars($project['projectid'])?>)">Edit</button>
+                            <form action="/admin/projects/update" method="POST" style="display:none;" id="edit-form-<?=htmlspecialchars($project['projectid'])?>">
+                                <input type="hidden" name="projectid" value="<?=htmlspecialchars($project['projectid'])?>">
+                                <input type="text" name="title" value="<?=htmlspecialchars($project['title'])?>">
+                                <input type="text" name="description" value="<?=htmlspecialchars($project['description'])?>">
+                                <button type="submit">Update</button>
+                            </form>
+                            <form action="/admin/projects/delete" method="POST" style="display:inline;">
+                                <input type="hidden" name="projectid" value="<?=htmlspecialchars($project['projectid'])?>">
+                                <button type="submit">Delete</button>
+                            </form>
+                    </li>
+                    <?php endforeach;?>
+    </ul>
+            <?php else:?>
+                <p>No projects found.</p>
+            <?php endif;?>
+    </div>
+</main>
 
 <?php include "./views/layout/foot.php"?>
