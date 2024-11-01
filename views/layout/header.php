@@ -1,8 +1,15 @@
 <body id="body">
 <header id="header">
-    <button id="darkbutton" onclick="darkmode()">
-        Toggle Dark Mode
-    </button>
+    <div class="hbuttons">
+        <button id="darkbutton" onclick="darkmode()" class="headerbuttons">
+            Toggle Dark Mode
+        </button>
+        <a href="/admin">
+            <button class="headerbuttons">
+                Admin login
+            </button>
+        </a>
+    </div>
     <nav class="nav1" id="nav">
         <a href="/">
             <img src="/views/CSS/assets/homewh.png" class="navlinks">
