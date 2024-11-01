@@ -1,10 +1,10 @@
 <?php
-require "./models/projectsModel.php";
-require "./controllers/adminController.php";
+require_once "./models/projectsModel.php";
+require_once "./controllers/adminController.php";
 class projectsController{
     protected $projectsModel;
     public function __construct(){
-        $this->projectsModel = new projectsModel('localhost', 'portfolio', 'root', 'NEWPASS');
+        $this->projectsModel = new projectsModel();
     }
         public function show(){
         $title = "Projects";

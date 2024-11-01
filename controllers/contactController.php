@@ -1,10 +1,10 @@
 <?php
-require "./models/contactModel.php";
-require "./controllers/adminController.php";
+require_once "./models/contactModel.php";
+require_once "./controllers/adminController.php";
 class contactController{
     protected $contactModel;
     public function __construct(){
-        $this->contactModel = new contactModel('localhost', 'portfolio', 'root', 'NEWPASS');
+        $this->contactModel = new contactModel();
     }
     public function show(){
         $title = "Contact";

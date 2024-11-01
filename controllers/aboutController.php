@@ -1,11 +1,11 @@
 <?php
-require "./models/aboutModel.php";
-require "./controllers/adminController.php";
+require_once "./models/aboutModel.php";
+require_once "./controllers/adminController.php";
 class aboutController {
 
     protected $aboutModel;
     public function __construct(){
-        $this->aboutModel = new aboutModel('localhost', 'portfolio', 'root', 'NEWPASS');
+        $this->aboutModel = new aboutModel();
     }
     public function showAboutEN(){
         $title = "About";

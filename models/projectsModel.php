@@ -1,8 +1,9 @@
 <?php
+require_once "./models/databaseModel.php";
 class projectsModel{
     private $conn;
-    public function __construct($servername, $dbname, $username, $password){
-        $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    public function __construct(){
+        $this->conn = databaseModel::getInstance()->getConnection();
     }
     public function createProject($title, $description){
         $sql = "INSERT INTO projects (title, description) VALUES (:title, :description)";

@@ -1,9 +1,9 @@
 <?php
-require "./models/adminModel.php";
+require_once "./models/adminModel.php";
 class adminController{
     protected $adminModel;
     public function __construct(){
-        $this->adminModel = new adminModel('localhost', 'portfolio', 'root', 'NEWPASS');
+        $this->adminModel = new adminModel();
     }
     public function showLogin(){
         $title = "Admin Panel Login";

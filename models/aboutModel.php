@@ -1,8 +1,9 @@
 <?php
+require_once "./models/databaseModel.php";
 class aboutModel{
     private $conn;
-    public function __construct($servername, $dbname, $username, $password){
-        $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    public function __construct(){
+        $this->conn = databaseModel::getInstance()->getConnection();
     }
     public function getAbout(){
         $sql = "SELECT * FROM about";

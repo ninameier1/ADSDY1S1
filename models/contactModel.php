@@ -1,8 +1,9 @@
 <?php
+require_once "./models/databaseModel.php";
 class contactModel{
     private $conn;
-    public function __construct($servername, $dbname, $username, $password){
-        $this->conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    public function __construct(){
+        $this->conn = databaseModel::getInstance()->getConnection();
     }
     public function createMessage($name, $email, $content){
         $sql = "INSERT INTO messages (name, email, content) VALUES (:name, :email, :content)";
