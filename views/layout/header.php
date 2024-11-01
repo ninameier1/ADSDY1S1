@@ -2,7 +2,7 @@
 <header id="header">
     <div class="hbuttons">
         <button id="darkbutton" onclick="darkmode()" class="headerbuttons">
-            Toggle Dark Mode
+            <img src="./views/css/assets/lightmode.png" class="bimg"/>
         </button>
         <a href="/admin">
             <button class="headerbuttons">

@@ -2,6 +2,7 @@ function darkmode(){
     console.log("Dark mode activated");
     darkmenu()
     toggleBackground()
+    toggleButtonImage()
 }
 
 function darkmenu(){
@@ -20,6 +21,15 @@ function toggleBackground(){
         backgroundElement.style.backgroundImage = 'url("/views/css/assets/bgbl.png")';
     }
     isDarkMode = !isDarkMode;
+}
+
+function toggleButtonImage(){
+    const buttonImage = document.querySelector("#darkbutton .bimg");
+    if (isDarkMode) {
+        buttonImage.src = "./views/css/assets/darkmode.png";
+    } else {
+        buttonImage.src = "./views/css/assets/lightmode.png";
+    }
 }
 
 function toggleEditForm(projectId){
