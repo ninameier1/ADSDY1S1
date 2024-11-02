@@ -25,25 +25,24 @@ header{
 .hbuttons{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
 
 .headerbuttons{
     border: none;
     background: transparent;
     cursor: pointer;
-    display: flex;
-    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .bimg{
     width: auto;
-    height: 5vh;
+    height: 4vh;
 }
 
 .adminbutton{
-    height: 5vh;
-    width: 10vh;
+    height: 4vh;
     border-radius: 25px;
 }
 

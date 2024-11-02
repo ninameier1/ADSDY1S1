@@ -32,6 +32,7 @@
     <div class="right">
         <div class="cv aboutsection">
             <p class="text">
+                <a href="/about/downloadCV">Download CV</a>
                     FAKE NAME
                     Phone:
                     email

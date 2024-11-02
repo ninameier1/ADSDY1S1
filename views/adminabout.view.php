@@ -18,5 +18,9 @@
 <?php else:?>
     <p>404</p>
 <?php endif;?>
-
+<form action="/admin/about/uploadCV" method="POST" enctype="multipart/form-data">
+    <label for="cv">Upload CV (PDF only):</label>
+    <input type="file" name="cv" id="cv" accept=".pdf" required>
+    <button type="submit">Upload</button>
+</form>
 <?php include "./views/layout/foot.php"?>

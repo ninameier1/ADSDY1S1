@@ -21,6 +21,12 @@ switch ($url){
         $controller->showAboutEN();
         break;
 
+    case "/about/downloadCV":
+        require "controllers/aboutController.php";
+        $controller = new aboutController();
+        $controller->downloadCV();
+        break;
+
     case "/about/nl";
         require "controllers/aboutController.php";
         $controller = new aboutController();
@@ -110,6 +116,12 @@ switch ($url){
         require "controllers/aboutController.php";
         $controller = new aboutController();
         $controller->update();
+        break;
+
+    case "/admin/about/uploadCV":
+        require "controllers/aboutController.php";
+        $controller = new aboutController();
+        $controller->uploadCV();
         break;
 
     case "/admin/messages";
