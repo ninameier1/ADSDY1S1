@@ -77,6 +77,17 @@ switch ($url){
         $controller->update();
         break;
 
+    case "/admin/store";
+        require "controllers/projectsController.php";
+        $auth = new adminController();
+        $auth->checkLogin();
+        $controller = new projectsController();
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $controller->store();
+        }
+        break;
+
+
     case "/admin/projects/delete";
         require "controllers/projectsController.php";
         $controller = new projectsController();
