@@ -31,10 +31,10 @@ class adminController{
                 exit;
             } else {
                 $error = "Invalid credentials";
-                require_once "/views/adminlogin.view.php";
+                require_once "./views/adminlogin.view.php";
             }
         } else {
-            require_once "/views/adminlogin.view.php";
+            require_once "./views/adminlogin.view.php";
         }
     }
     public function logout(){

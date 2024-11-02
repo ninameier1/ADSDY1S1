@@ -3,9 +3,16 @@
 <link rel="stylesheet" href="./views/css/custom.css">
 
 <body id="body">
-    <button id="darkbutton" onclick="darkmode()">
-        Toggle Dark Mode
+<div class="hbuttons">
+    <button id="darkbutton" onclick="darkmode()" class="headerbuttons">
+        <img src="/views/css/assets/lightmode.png" class="bimg"/>
     </button>
+    <a href="/admin">
+        <button class="headerbuttons">
+            <img src="/views/css/assets/login.png" class="bimg"/>
+        </button>
+    </a>
+</div>
     <main>
         <div class="menu">
         <img src="./views/css/assets/flip.png" class="title">

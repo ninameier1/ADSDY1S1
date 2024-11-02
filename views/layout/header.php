@@ -2,11 +2,11 @@
 <header id="header">
     <div class="hbuttons">
         <button id="darkbutton" onclick="darkmode()" class="headerbuttons">
-            <img src="./views/css/assets/lightmode.png" class="bimg"/>
+            <img src="/views/css/assets/lightmode.png" class="bimg"/>
         </button>
         <a href="/admin">
             <button class="headerbuttons">
-                Admin login
+                <img src="/views/css/assets/login.png" class="bimg"/>
             </button>
         </a>
     </div>

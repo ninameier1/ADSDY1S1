@@ -61,9 +61,9 @@ switch ($url){
 
     case "/admin/projects";
         require "controllers/projectsController.php";
-        $controller = new projectsController();
         $auth = new adminController();
         $auth->checkLogin();
+        $controller = new projectsController();
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $controller->store();
         } else {
@@ -89,10 +89,10 @@ switch ($url){
 
     case "/admin/about";
         require "controllers/aboutController.php";
-        $controller = new aboutController();
-        $controller->showAbout();
         $auth = new adminController();
         $auth->checkLogin();
+        $controller = new aboutController();
+        $controller->showAbout();
         break;
 
     case "/admin/about/update";
@@ -103,10 +103,10 @@ switch ($url){
 
     case "/admin/messages";
         require "controllers/contactController.php";
-        $controller = new contactController();
-        $controller->showMessages();
         $auth = new adminController();
         $auth->checkLogin();
+        $controller = new contactController();
+        $controller->showMessages();
         break;
 
     case "/admin/messages/delete";
