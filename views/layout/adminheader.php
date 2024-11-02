@@ -10,15 +10,15 @@
     </div>
     <nav class="nav1" id="nav">
         <a href="/admin/home" class="admheader">
-        ADMIN HOMEPAGE
+        HOME
         </a>
         <a href="/admin/projects" class="admheader">
-            EDIT PROJECTS
+            PROJECTS
         <a href="/admin/about" class="admheader">
-           EDIT ABOUT
+           ABOUT
         </a>
         <a href="/admin/messages" class="admheader">
-            READ MESSAGES
+            MESSAGES
         </a>
     </nav>
 </header>

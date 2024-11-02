@@ -8,6 +8,7 @@ main{
 
 .title{
     height:30vh;
+    max-width: 90vw;
 }
 
 .hometext{
@@ -16,6 +17,7 @@ main{
     letter-spacing: 0.4em;
     margin-top: 1%;
     margin-bottom: 2%;
+    text-align: center;
 }
 
 .menu{
@@ -28,4 +30,11 @@ main{
 
 .menulinks{
     width: 45vw;
+}
+
+/*MEDIA QUERY*/
+@media (max-width: 800px) {
+    .menulinks{
+        width: 90vw;
+    }
 }

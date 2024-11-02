@@ -26,6 +26,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+    background: transparent;
 }
 
 .headerbuttons{
@@ -39,6 +41,14 @@ header{
 .bimg{
     width: auto;
     height: 4vh;
+}
+
+.headername{
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    letter-spacing: 0.4em;
 }
 
 .adminbutton{
@@ -59,6 +69,7 @@ header{
 
 .navlinks{
     height: 6.5vh;
+    max-width: 100%;
 }
 
 .menulinks:hover, .navlinks:hover {
@@ -68,14 +79,15 @@ header{
 /*PROJECTSPAGE*/
 .createproject{
     height:15vh;
-
 }
+
 .projectgrid{
-    width: 100%;
+    width: 100vw;
     padding: 20px;
     text-align: center;
     height: calc(100vh - 15vh);
     overflow-y: scroll;
+    justify-content: center;
 }
 
 .plistitem{
@@ -84,6 +96,7 @@ header{
     gap: 20px;
     list-style-type: none;
     padding: 0;
+
 }
 
 .project-item {
@@ -97,45 +110,32 @@ header{
 
 /*ABOUTPAGE*/
 .mainabout{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: flex-start;
+    width: 100vw;
+    padding: 20px;
+    text-align: center;
     height: calc(100vh - 15vh);
+    overflow-y: scroll;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .aboutsection{
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
+    width: 75vw;
 }
 
 .left{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 2% 2% 2% 2%;
-    height: calc(100vh - 20vh);
-}
-.me{
-    height: 38.5vh;
-}
-
-.index{
-    height: 38.5vh;
+    margin-top: 1%;
+    height: 25vh;
 }
 
 .right{
-    display: flex;
-    flex: 1;
-    margin: 2% 2% 2% 0;
-    height: calc(100vh - 20vh);
-}
-
-.cv{
-    height: 80vh;
-    overflow: scroll;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .text{
@@ -155,8 +155,8 @@ header{
 }
 
 .contactsection{
-    height: 40vh;
-    width: 45vw;
+    height: 50vh;
+    width: 60vw;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 10px;
@@ -214,6 +214,7 @@ header{
     text-decoration: none;
     color: white;
     font-size: 2rem;
+    max-width: 100%;
 }
 
 /*ADMIN HOMEPAGE*/
@@ -260,4 +261,16 @@ header{
     filter: brightness(0.6);
 }
 
-
+/*MEDIA QUERY*/
+@media (max-width: 800px) {
+    .plistitem{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .aboutsection{
+        width: 90vw;
+    }
+    .contactsection{
+        height: 50vh;
+        width: 90vw;
+    }
+}

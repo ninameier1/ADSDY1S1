@@ -4,6 +4,9 @@
             <button id="darkbutton" onclick="darkmode()" class="headerbuttons">
                 <img src="/views/css/assets/lightmode.png" class="bimg"/>
             </button>
+            <a href="/" class="headername">
+                NINA MEIER
+            </a>
             <a href="/admin">
                 <button class="headerbuttons">
                     <img src="/views/css/assets/login.png" class="bimg"/>
@@ -11,9 +14,9 @@
             </a>
         </div>
         <nav class="nav1" id="nav">
-            <a href="/">
-                <img src="/views/CSS/assets/homewh.png" class="navlinks">
-            </a>
+<!--            <a href="/">-->
+<!--                <img src="/views/CSS/assets/homewh.png" class="navlinks">-->
+<!--            </a>-->
             <a href="/projects">
                 <img src="<?php echo ($title == 'Projects')?'/views/css/assets/projectsbl.png':'/views/css/assets/projectswh.png';?>" class="navlinks">
             </a>

@@ -2,8 +2,8 @@
 <?php include "./views/layout/header.php"?>
 
 <main class="mainabout">
-    <div class="left">
-        <div class="me aboutsection">
+    <div class="left aboutsection">
+<!--        <div class="">-->
             <a href="/about/nl">
                 <button>
                     Nederlands
@@ -21,16 +21,8 @@
             <?php else:?>
                 <p>404</p>
             <?php endif;?>
-        </div>
-        <div class="index aboutsection">
-            <p class="text">
-                index
-                efihjvk sjkhvjk sakfkjsn fksfjns fsjfnjsn sjnjsn dfgvdgdg svfsd dgff
-            </p>
-        </div>
     </div>
-    <div class="right">
-        <div class="cv aboutsection">
+    <div class="right aboutsection">
             <p class="text">
                 <a href="/about/downloadCV">Download CV</a>
                     FAKE NAME
@@ -100,7 +92,6 @@
                     raisers.
                     NAME - 2
             </p>
-        </div>
     </div>
 </main>
 
