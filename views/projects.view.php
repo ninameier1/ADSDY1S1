@@ -7,18 +7,24 @@
         <ul class="plistitem">
             <?php foreach ($projects as $project):?>
                 <li class="project-item">
+                    <p class="ptitle">
+                        <?=htmlspecialchars($project['title'] ?? '')?>
+                        <a href="<?= htmlspecialchars($project['github_link'] ?? '#') ?>" target="_blank">
+                            <button class="butt">
+                                <?= !empty($project['github_link']) ? 'GitHub' : 'No link available' ?>
+                            </button>
+                        </a>
+                    </p>
                     <?php if (!empty($project['image_path'])): ?>
-                        <div class="project-image">
-                            <img src="/views/uploads/<?= htmlspecialchars($project['image_path']) ?>" alt="Project Image" style="max-width: 200px; height: auto;">
+                        <div>
+                            <img src="/views/uploads/<?= htmlspecialchars($project['image_path']) ?>" alt="Project Image" class="pimage">
                         </div>
                     <?php else: ?>
                         <p>No image available for this project.</p>
                     <?php endif; ?>
-                    <p>Title: <?=htmlspecialchars($project['title'] ?? '')?></p>
-                    <p>Description: <?=htmlspecialchars($project['description'] ?? '')?></p>
-                    <p>GitHub: <a href="<?= htmlspecialchars($project['github_link'] ?? '#') ?>" target="_blank"><?= htmlspecialchars($project['github_link'] ?? 'No link available') ?></a></p>
-
-
+                    <p class="pdesc">
+                        <?=htmlspecialchars($project['description'] ?? '')?>
+                    </p>
                 </li>
             <?php endforeach;?>
         </ul>

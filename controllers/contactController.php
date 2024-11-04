@@ -27,7 +27,7 @@ class contactController{
     }
     public function deleteMessages($messageid){
         $this->contactModel->deleteMessage($messageid);
-        header("Location: /adminmessages");
+        header("Location: /admin/messages");
         exit();
     }
 }

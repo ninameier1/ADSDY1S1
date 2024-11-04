@@ -12,19 +12,23 @@ class aboutModel{
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     public function getAboutEN(){
-        $sql = "SELECT * FROM about WHERE language = 'english'";
+        $sql = "SELECT * FROM about 
+                WHERE language = 'english'";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     public function getAboutNL(){
-        $sql = "SELECT * FROM about WHERE language = 'dutch'";
+        $sql = "SELECT * FROM about 
+                WHERE language = 'dutch'";
         $stmt = $this->conn->prepare($sql);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
     public function updateAbout($aboutid, $language, $bio){
-        $sql = "UPDATE about SET language = :language, bio = :bio WHERE aboutid = :aboutid";
+        $sql = "UPDATE about 
+                SET language = :language, bio = :bio 
+                WHERE aboutid = :aboutid";
         $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(':language', $language);
         $stmt->bindParam(':bio', $bio);

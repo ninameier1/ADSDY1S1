@@ -11,7 +11,7 @@
             <input type="text" placeholder="Name" class="name" name="name">
             <input type="text" placeholder="E-mail" class="email" name="email">
             <input type="text" placeholder="Message..." class="content" name="content">
-            <button type="submit" class="button">SEND</button>
+            <button type="submit" class="butt">SEND</button>
         </form>
     </div>
     <div class="contactlinks">

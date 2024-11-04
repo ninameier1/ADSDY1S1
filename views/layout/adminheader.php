@@ -4,7 +4,7 @@
         <button id="darkbutton" onclick="darkmode()" class="headerbuttons">
             <img src="/views/css/assets/lightmode.png" class="bimg"/>
         </button>
-        <button>
+        <button class="butt">
             <a href="/admin/logout">Logout</a>
         </button>
     </div>

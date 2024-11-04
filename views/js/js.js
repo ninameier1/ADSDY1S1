@@ -26,7 +26,7 @@ function darkmode() {
 
 // Function to toggle dark mode styles on menu items
 function darkmenu() {
-    const elementsToFilter = document.querySelectorAll(".menulinks, .navlinks, .title");
+    const elementsToFilter = document.querySelectorAll(".menulinks, .navlinks, .title, .contacttitle, .ptitle, .pdesc, .text");
     elementsToFilter.forEach(element => {
         element.classList.toggle("darkmode", isDarkMode); // Apply class based on current state
     });
