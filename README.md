@@ -55,3 +55,8 @@ Na de installatie kan de applicatie worden uitgevoerd door de webbrowser te open
 Om in te kunnen loggen in mijn Admin panel, gebruik je de volgende username en password:
 - username: admin
 - password: admin
+
+## Github
+Deze portfolio is mijn privé portfolio en is alleen te vinden op:
+
+https://github.com/ninameier1/ADSDY1S1
