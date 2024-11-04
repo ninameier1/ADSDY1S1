@@ -15,11 +15,11 @@
         </form>
     </div>
     <div class="contactlinks">
-        <a href="https://github.com/">
-            <img src="./views/css/assets/github.png" class="socials">
+        <a href="https://github.com/ninameier1">
+            <img src="./views/css/assets/github.png" class="socials" alt="Github Logo">
         </a>
         <a href="https://linkedin.com">
-            <img src="./views/css/assets/linkedin.png" class="socials">
+            <img src="./views/css/assets/linkedin.png" class="socials" alt="LinkedIn Logo">
         </a>
     </div>
 </main>
