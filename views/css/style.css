@@ -188,6 +188,13 @@ header{
     cursor: pointer;
 }
 
+.subtitle{
+    color: white;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    text-align: start;
+}
+
 /*CONTACTPAGE*/
 .maincontact{
     display: flex;

@@ -39,52 +39,40 @@
                 </button>
             </a>
         </div>
-            <p class="text">
-                    FAKE NAME
-                    Phone:
-                    email
-                    ADDRESS
-                    I'm a student studying Aerospace Engineering at the University of Manchester. I have work
-                    experience in the retail, catering, and commercial transport industry. I am honest, reliable and
-                    my past roles have required good timekeeping and a positive attitude in high pressure
-                    environments. My aim is to get relevant internship experience whilst I am at university so I
-                    can graduate with a greater understanding of the engineering industry and what companies
-                    look for in engineering graduates.
-                    EDUCATION
-                    School (2006-2010) – GCSE
-                    English – Grade C Business Studies – Grade B
-                    Maths – Grade C Catering – Grade C
-                    Additional Science – Grade C Engineering Double Award – Grade B,C
-                    College (2010-2012) – Level 2 NVQ
-                    Diploma in HGV Vehicle Maintenance & Repair
-                    College (2014-2015) – Level 3 Access to HE
-                    Engineering Science – 9 Distinctions, 6 Merits
-                    Physics – 15 Distinctions
-                    Maths – 6 Distinctions, 9 Merits
-                    University of Manchester (2015-Current) BEng/MEng
-                    Aerospace Engineering with a Foundation Year
-                    WORK EXPERIENCE
-                    Penventon Park Hotel (May 2009)
-                    I had 2 weeks work experience at the Penventon Park Hotel in Redruth, Cornwall. My
-                    primary role was an assistant kitchen porter and an assistant to the restaurant manager and
-                    the head chef. I carried out jobs including washing up, cleaning/tidying and basic food
-                    preparation. My secondary roles at this work placement were assisting the room
-                    housekeeping team, the reception, and the functions department.
-                    NAME - 1
-                    NAME Commercials (June 2010 – June 2013) – Apprentice / Technician
-                    NAME Commercials is a commercial workshop that maintain and repair heavy goods
-                    vehicles.
-                    INTERESTS / OTHER
-                    My hobbies include: playing the guitar, martial arts, kayaking, and badminton. I'm interested
-                    in the development of the UK Space industry and the progress of technology in renewable
-                    energy and bio-technology.
-                    I am also on the Residents Association for NAME Student Residences at the University of
-                    Manchester. My role is Deputy Chair, this position includes: assisting the Chair oversee and
-                    manage the responsibilites of the residents association, organising events for the residents of
-                    the halls, ensuring proper procedures are taken with regards to administration and event
-                    planning, and assisting the "Raise and Give" branch of the University with charity fund
-                    raisers.
-            </p>
+        <h2 class="subtitle">
+            Work Experience
+        </h2>
+        <p class="text">
+            Currently I'm lacking in relevant work experience for Software Development, but I am looking for an internship position.
+        </p>
+        <br>
+        <h2 class="subtitle">
+            Ongoing Education
+        </h2>
+        <p class="text">
+            AD Software Development <br>
+            At Windesheim Flevoland in Almere <br>
+        </p>
+        <br>
+        <h2 class="subtitle">
+            Previous Education
+        </h2>
+        <p class="text">
+            BA Architecture & Interior Design <br>
+            At Hogeschool Zuyd in Maastricht <br>
+        </p>
+        <br>
+        <p class="text">
+            BSc of Nursing <br>
+            At Windesheim Flevoland in Almere <br>
+        </p>
+        <br>
+        <p class="text">
+            High School - Pre-University Education (Dutch VWO level) <br>
+            Culture & Society specialisation (Dutch C&M) <br>
+            At De Werkplaats Kindergemeenschap located in Bilthoven
+        </p>
+        <br>
     </div>
 </main>
 
